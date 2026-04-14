@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: adqip-config
+  namespace: adqip
+data:
+  ENVIRONMENT: "production"
+  LOG_LEVEL: "INFO"
+  POSTGRES_DB: "adqip"
+  S3_DATASETS_BUCKET: "adqip-datasets"
+  S3_REPORTS_BUCKET: "adqip-reports"
+  AWS_DEFAULT_REGION: "us-east-1"
+  KAFKA_TOPIC: "adqip-stream"
+  KAFKA_BATCH_WINDOW_SECONDS: "5"
+  QUALITY_SCORE_ALERT_THRESHOLD: "70"
+  OPENAI_MODEL: "gpt-4o-mini"
+  JWT_ALGORITHM: "HS256"
+  JWT_ACCESS_TOKEN_EXPIRE_MINUTES: "30"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: adqip-secrets
+  namespace: adqip
+type: Opaque
+stringData:
+  POSTGRES_USER: "adqip"
+  POSTGRES_PASSWORD: "CHANGE_ME"
+  MONGO_USER: "adqip"
+  MONGO_PASSWORD: "CHANGE_ME"
+  REDIS_PASSWORD: "CHANGE_ME"
+  JWT_SECRET_KEY: "CHANGE_ME_USE_LONG_RANDOM_STRING"
+  OPENAI_API_KEY: "sk-your-key-here"
+  MINIO_ACCESS_KEY: "CHANGE_ME"
+  MINIO_SECRET_KEY: "CHANGE_ME"

@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\services\storage.py
+# hypothesis_version: 6.151.9
+
+[3600, 'Bucket', 'Key', 'get_object', 's3', 's3v4']

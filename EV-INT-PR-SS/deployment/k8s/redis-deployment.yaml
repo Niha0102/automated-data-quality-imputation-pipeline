@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adqip-redis
+  namespace: adqip
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adqip-redis
+  template:
+    metadata:
+      labels:
+        app: adqip-redis
+    spec:
+      containers:
+        - name: redis
+          image: redis:7-alpine
+          ports:
+            - containerPort: 6379
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "1Gi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: adqip-redis
+  namespace: adqip
+spec:
+  selector:
+    app: adqip-redis
+  ports:
+    - port: 6379
+      targetPort: 6379
+  type: ClusterIP

@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\ml_pipeline\pipeline\anomaly_detector.py
+# hypothesis_version: 6.151.9
+
+[0.1, 100, 'AutoencoderDetector', 'adam', 'linear', 'mse', 'relu']

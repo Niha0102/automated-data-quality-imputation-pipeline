@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\api\v1\auth.py
+# hypothesis_version: 6.151.9
+
+['/auth', '/login', '/logout', '/me', '/refresh', 'Invalid credentials', 'Not a refresh token', 'User not found', 'auth', 'refresh', 'sub', 'type']

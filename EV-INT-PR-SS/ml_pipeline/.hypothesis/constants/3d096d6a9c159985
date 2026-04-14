@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\ml_pipeline\pipeline\drift_detector.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1e-10, 0.05, 1.0, 'chi2', 'ks']

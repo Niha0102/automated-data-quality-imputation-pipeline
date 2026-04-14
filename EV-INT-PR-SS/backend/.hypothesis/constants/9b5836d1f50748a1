@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\core\middleware.py
+# hypothesis_version: 6.151.9
+
+[100, 429, 'Authorization', 'Bearer ', 'RATE_LIMIT_EXCEEDED', 'Retry-After', 'code', 'error', 'message', 'request_id', 'sub', 'x-request-id']

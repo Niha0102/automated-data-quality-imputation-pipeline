@@ -1,0 +1,4 @@
+# file: C:\Users\MOHAMMED\AppData\Roaming\Python\Python314\site-packages\celery\fixups\django.py
+# hypothesis_version: 6.151.9
+
+['BaseDatabaseWrapper', 'CELERY_DB_REUSE_MAX', 'CELERY_SKIP_CHECKS', 'Celery', 'DjangoDBModule', 'DjangoFixup', 'DjangoWorkerFixup', 'ModuleType', 'OPTIONS', 'Task', 'WorkController', 'close_pool', 'closed', 'django', 'django.conf:settings', 'django.core.cache', 'django.db', 'fixup', 'is_eager', 'not connected', 'pool', 'prefork', 'sender']

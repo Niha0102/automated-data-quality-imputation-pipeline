@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adqip-backend
+  namespace: adqip
+  labels:
+    app: adqip-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: adqip-backend
+  template:
+    metadata:
+      labels:
+        app: adqip-backend
+    spec:
+      containers:
+        - name: backend
+          image: adqip/backend:latest
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: adqip-config
+            - secretRef:
+                name: adqip-secrets
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: adqip-backend
+  namespace: adqip
+spec:
+  selector:
+    app: adqip-backend
+  ports:
+    - port: 8000
+      targetPort: 8000
+  type: ClusterIP

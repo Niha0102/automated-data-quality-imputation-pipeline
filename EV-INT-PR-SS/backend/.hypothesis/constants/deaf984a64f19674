@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\schemas\auth.py
+# hypothesis_version: 6.151.9
+
+['bearer', 'from_attributes']

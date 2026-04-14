@@ -1,0 +1,4 @@
+# file: C:\Users\MOHAMMED\AppData\Roaming\Python\Python314\site-packages\sklearn\impute\_iterative.py
+# hypothesis_version: 6.151.9
+
+[1e-06, 0.001, 'F', '_ImputerTriplet', 'allow-nan', 'arabic', 'array-like', 'ascending', 'boolean', 'both', 'constant', 'default', 'descending', 'estimator', 'feat_idx', 'fill_value', 'fit', 'ignore', 'imputation_order', 'initial_strategy', 'l1', 'left', 'mask', 'max', 'max_iter', 'max_value', 'mean', 'median', 'mergesort', 'min', 'min_value', 'most_frequent', 'n_features_in_', 'n_nearest_features', 'neighbor_feat_idx', 'no_validation', 'predict', 'random', 'random_state', 'random_state_', 'roman', 'sample_posterior', 'skip_complete', 'strategy', 'tol', 'verbose']

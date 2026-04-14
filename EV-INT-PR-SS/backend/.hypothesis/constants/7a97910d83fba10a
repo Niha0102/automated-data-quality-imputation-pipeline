@@ -1,0 +1,4 @@
+# file: C:\Users\MOHAMMED\AppData\Roaming\Python\Python314\site-packages\celery\result.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.5, 'AsyncResult', 'EagerResult', 'GroupResult', 'ResultBase', 'ResultSet', '_ignored', 'args', 'children', 'date_done', 'kwargs', 'name', 'oval', 'queue', 'result', 'result_from_tuple', 'retries', 'status', 'task_id', 'traceback', 'worker']

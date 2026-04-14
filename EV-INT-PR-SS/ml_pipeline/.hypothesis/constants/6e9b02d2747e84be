@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\ml_pipeline\pipeline\imputer.py
+# hypothesis_version: 6.151.9
+
+[0.8, 100, 'auto', 'coerce', 'imp', 'knn', 'mean', 'median', 'mice', 'mode', 'most_frequent', 'regression']

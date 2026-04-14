@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\core\security.py
+# hypothesis_version: 6.151.9
+
+['access', 'auto', 'bcrypt', 'exp', 'iat', 'refresh', 'role', 'sub', 'type']

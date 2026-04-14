@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\ml_pipeline\pipeline\report_generator.py
+# hypothesis_version: 6.151.9
+
+[b'%PDF-1.4 placeholder', 0.15, 0.2, 0.5, 0.75, '#14B8A6', '#1E293B', '#F0FDFA', '#F8FAFC', 'Accuracy', 'BACKGROUND', 'Completeness', 'Consistency', 'Dataset ID', 'Executive Summary', 'FONTNAME', 'FONTSIZE', 'Fixes Applied', 'GRID', 'Generated', 'Heading2', 'Helvetica', 'Helvetica-Bold', 'Issues Found', 'Job ID', 'Metric', 'N/A', 'Normal', 'Overall Quality', 'Quality Scores', 'ROWBACKGROUNDS', 'Recommendations', 'Score', 'TEXTCOLOR', 'Title', '_id', 'action', 'application/pdf', 'column', 'reason']

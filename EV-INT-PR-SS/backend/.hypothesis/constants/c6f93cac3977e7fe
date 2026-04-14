@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\db\models.py
+# hypothesis_version: 6.151.9
+
+[255, 'Alert', 'Dataset', 'DatasetVersion', 'Job', 'PENDING', 'User', 'alerts', 'all, delete-orphan', 'dataset', 'dataset_versions', 'datasets', 'datasets.id', 'job', 'jobs', 'jobs.id', 'user', 'users', 'users.id', 'versions']

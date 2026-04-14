@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\tasks\pipeline_task.py
+# hypothesis_version: 6.151.9
+
+['PENDING', 'job_id', 'pipeline.run', 'status']

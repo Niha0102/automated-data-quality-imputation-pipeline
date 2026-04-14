@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\main.py
+# hypothesis_version: 6.151.9
+
+['*', '/api/v1', '/docs', '/health', '/openapi.json', '/redoc', '1.0.0', 'backend', 'health', 'ok', 'service', 'status']

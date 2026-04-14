@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\db\redis.py
+# hypothesis_version: 6.151.9
+
+[7200, 86400, 604800]

@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\ml_pipeline\pipeline\scorer.py
+# hypothesis_version: 6.151.9
+
+[0.25, 0.75, 1.5, 3.0, 100.0, 'coerce']

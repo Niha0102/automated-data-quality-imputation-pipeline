@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\core\config.py
+# hypothesis_version: 6.151.9
+
+[70.0, 1024, '.env', 'HS256', 'INFO', 'adqip-datasets', 'adqip-reports', 'adqip-stream', 'adqip_minio', 'adqip_minio_secret', 'development', 'gpt-4o-mini', 'ignore', 'localhost:9092', 'us-east-1']

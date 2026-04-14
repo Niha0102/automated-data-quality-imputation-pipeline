@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\db\postgres.py
+# hypothesis_version: 6.151.9
+
+['development', 'echo', 'max_overflow', 'pool_pre_ping', 'pool_size', 'sqlite']

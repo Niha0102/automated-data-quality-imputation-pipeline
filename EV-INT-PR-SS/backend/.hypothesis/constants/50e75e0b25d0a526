@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\api\v1\admin.py
+# hypothesis_version: 6.151.9
+
+[200, 404, 409, 422, '/admin', '/users', '/users/{user_id}', 'User not found', 'admin', 'user']

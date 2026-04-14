@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\api\v1\alerts.py
+# hypothesis_version: 6.151.9
+
+[200, 403, 404, '/alerts', 'Access forbidden', 'Alert not found', 'alerts']

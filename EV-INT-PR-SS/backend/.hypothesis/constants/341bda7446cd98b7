@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\backend\app\api\v1\jobs.py
+# hypothesis_version: 6.151.9
+
+[403, 404, '/jobs', '/{job_id}', '/{job_id}/status', 'Access forbidden', 'Dataset not found', 'Job not found', 'PENDING', 'jobs', 'nl_query']

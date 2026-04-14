@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: adqip-postgres
+  namespace: adqip
+spec:
+  serviceName: adqip-postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adqip-postgres
+  template:
+    metadata:
+      labels:
+        app: adqip-postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16-alpine
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - secretRef:
+                name: adqip-secrets
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data
+          livenessProbe:
+            exec:
+              command: ["pg_isready", "-U", "adqip"]
+            initialDelaySeconds: 30
+            periodSeconds: 10
+  volumeClaimTemplates:
+    - metadata:
+        name: postgres-data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 50Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: adqip-postgres
+  namespace: adqip
+spec:
+  selector:
+    app: adqip-postgres
+  ports:
+    - port: 5432
+      targetPort: 5432
+  clusterIP: None

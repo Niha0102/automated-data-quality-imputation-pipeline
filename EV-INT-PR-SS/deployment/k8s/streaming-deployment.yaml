@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adqip-streaming
+  namespace: adqip
+  labels:
+    app: adqip-streaming
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adqip-streaming
+  template:
+    metadata:
+      labels:
+        app: adqip-streaming
+    spec:
+      containers:
+        - name: streaming
+          image: adqip/streaming:latest
+          envFrom:
+            - configMapRef:
+                name: adqip-config
+            - secretRef:
+                name: adqip-secrets
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"

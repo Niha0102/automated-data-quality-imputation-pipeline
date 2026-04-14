@@ -1,0 +1,4 @@
+# file: C:\Users\MOHAMMED\AppData\Roaming\Python\Python314\site-packages\redis\commands\helpers.py
+# hypothesis_version: 6.151.9
+
+['"', '""', 'Child iterators', '\\', '\\"', '\\\\', 'null', 'protocol', 'replace', 'utf-8']

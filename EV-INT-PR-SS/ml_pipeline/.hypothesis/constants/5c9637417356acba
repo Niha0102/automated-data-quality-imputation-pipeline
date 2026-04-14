@@ -1,0 +1,4 @@
+# file: C:\Users\MOHAMMED\AppData\Roaming\Python\Python314\site-packages\celery\utils\abstract.py
+# hypothesis_version: 6.151.9
+
+['CallableSignature', 'CallableTask', '__or__', 'apply', 'apply_async', 'clone', 'delay', 'freeze', 'link', 'link_error', 'set']

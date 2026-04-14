@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adqip-frontend
+  namespace: adqip
+  labels:
+    app: adqip-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: adqip-frontend
+  template:
+    metadata:
+      labels:
+        app: adqip-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: adqip/frontend:latest
+          ports:
+            - containerPort: 80
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: adqip-frontend
+  namespace: adqip
+spec:
+  selector:
+    app: adqip-frontend
+  ports:
+    - port: 80
+      targetPort: 80
+  type: LoadBalancer

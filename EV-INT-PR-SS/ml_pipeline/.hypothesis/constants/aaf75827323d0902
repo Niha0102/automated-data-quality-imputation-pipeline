@@ -1,0 +1,4 @@
+# file: E:\EV-INT-PR-SS\ml_pipeline\pipeline\transformer.py
+# hypothesis_version: 6.151.9
+
+['__all__', 'categories', 'category', 'center', 'classes', 'day', 'feature_names_in_', 'hour', 'label', 'mean', 'month', 'object', 'onehot', 'raise', 'robust', 'scale', 'standard', 'type', 'weekday', 'year']

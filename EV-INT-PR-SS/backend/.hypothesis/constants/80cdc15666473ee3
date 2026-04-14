@@ -1,0 +1,4 @@
+# file: C:\Users\MOHAMMED\AppData\Roaming\Python\Python314\site-packages\pymongo\synchronous\auth_oidc.py
+# hypothesis_version: 6.151.9
+
+['$external', '*.', 'MONGODB-OIDC', 'conversationId', 'done', 'issuer', 'jwt', 'mechanism', 'n', 'payload', 'saslContinue', 'saslStart']
